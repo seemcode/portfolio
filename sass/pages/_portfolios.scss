@@ -1,0 +1,153 @@
+.portfolios {
+  width: 120rem;
+  margin: 0 auto 7rem;
+  padding: 5rem 5rem 10rem 5rem;
+  border-radius: 2.5rem;
+  background-color: var(--color-dark-2);
+
+  &__details {
+    display: inline-block;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    color: var(--color-green-1);
+  }
+
+  &__info {
+    display: inline-block;
+    color: var(--color-light-2);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-light-2);
+  }
+}
+
+.filter__list {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  position: relative;
+
+  // &::after {
+  //   content: "";
+  //   background-color: var(--color-light-1);
+  //   height: 1px;
+  //   width: 43%;
+  //   position: absolute;
+  //   bottom: -0.5rem;
+  // }
+
+  .filter__item {
+    button {
+      color: var(--color-light-1);
+      font: inherit;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--color-light-2);
+      }
+
+      &:focus {
+        color: var(--color-green-1);
+      }
+    }
+  }
+}
+
+.projects {
+  &__list {
+    padding: 0 8rem;
+    margin: 0 auto;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+
+  &__item {
+    display: none;
+
+    &.active {
+      display: block;
+      animation: scaleUp 0.25s ease forwards;
+    }
+  }
+}
+
+.project {
+  display: inline-block;
+
+  &:hover &__fig::before {
+    background-color: hsla(0, 0%, 0%, 0.4);
+  }
+
+  &:hover &__iconbox {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  &:hover &__fig img {
+    transform: scale(1.1);
+  }
+
+  &__fig {
+    display: inline-block;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    // height: 20rem;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.2s;
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      display: block;
+      z-index: 11;
+      transition: all 0.1s;
+      @include absCenter;
+    }
+  }
+
+  &__iconbox {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    background-color: var(--color-dark-2);
+    z-index: 100;
+    @include absCenter;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: all 0.2s;
+
+    ion-icon {
+      width: 2rem;
+      height: 2rem;
+      @include absCenter;
+      color: var(--color-green-1);
+      z-index: 200;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  &__category {
+    font-size: 1.4rem;
+    color: var(--color-light-2);
+  }
+}

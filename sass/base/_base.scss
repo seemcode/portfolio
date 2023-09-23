@@ -1,0 +1,44 @@
+:root {
+  --color-light-1: #fafafa;
+  --color-light-2: #fafafab7;
+
+  --color-dark-1: #121212;
+  --color-dark-2: #1e1e1f;
+  --color-dark-3: #272727;
+  --color-dark-4: #3f3f40;
+
+  // --color-green-1: #22ff00;
+  --color-green-1: hsl(196, 100%, 65%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: var(--color-dark-1);
+  color: var(--color-light-1);
+}
+
+section.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+main section {
+  display: none;
+  min-height: 80vh;
+}

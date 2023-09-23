@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style data-styles="">
+      ion-icon {
+        visibility: hidden;
+      }
+      .hydrated {
+        visibility: inherit;
+      }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./images/galaxy.png" type="image/x-icon" />
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      - scripts
+    -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">Waseem</h1>
+      <nav class="header__nav">
+        <ul class="header__nav--list">
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Home</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">About me</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Credentials</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Skills</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Portfolios</a>
+          </li>
+
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#/" class="header__chat">Let's Chat</a>
+    </header>
+    <main>
+      <section class="home active" data-page="home">
+        <div class="home__content">
+          <div class="my">
+            <div class="my__img">
+              <img src="images/my-image.jpg" alt="" />
+            </div>
+            <div class="my__details">
+              <p class="my__title">A Web Developer</p>
+              <h1 class="my__name">Waseem <br />Sajid</h1>
+              <p class="my__description">I am a web develper and designer based in Pakistan</p>
+            </div>
+            <a href="#/" class="common__link">
+              <img src="images/link-icon.svg" />
+            </a>
+          </div>
+          <div class="display">
+            <div class="ticker">
+              <p class="marquee">
+                <span>I use Javascript and make full stack Web Applications.</span>
+              </p>
+              <p class="marquee marquee2">
+                <span>I use Javascript and make full stack Web Applications.</span>
+              </p>
+            </div>
+            <div class="display__credentials block">
+              <img src="images/signature.svg" alt="" class="signature" />
+              <div class="block__details">
+                <p class="block__info">More about me</p>
+                <h1 class="block__title">Credentials</h1>
+              </div>
+              <a href="#/" class="common__link">
+                <img src="images/link-icon.svg" />
+              </a>
+            </div>
+            <div class="display__portfolios block">
+              <img src="images/laptop.png" alt="" class="laptop" />
+              <div class="block__details">
+                <p class="block__info">Showcase</p>
+                <h1 class="block__title">Portfolios</h1>
+              </div>
+              <a href="#/" class="common__link">
+                <img src="images/link-icon.svg" />
+              </a>
+            </div>
+          </div>
+          <div class="download block">
+            <img src="images/cv-icon.png" alt="" class="cv" />
+            <div class="block__details">
+              <p class="block__info">my cv</p>
+              <h1 class="block__title">Download</h1>
+            </div>
+            <a href="#/" class="common__link">
+              <img src="images/link-icon.svg" />
+            </a>
+          </div>
+          <div class="home-skills block">
+            <div class="home-skills__details">
+              <img src="images/mongo-logo.png" alt="" class="home-skills__details--1" />
+              <img src="images/expressjs.svg" alt="" class="home-skills__details--2" />
+              <img src="images/React-icon.svg.png" alt="" class="home-skills__details--3" />
+              <img src="images/nodejs.png" alt="" class="home-skills__details--4" />
+            </div>
+            <div class="block__details">
+              <p class="block__info">My Experties</p>
+              <h1 class="block__title">Specialization</h1>
+            </div>
+            <a href="#/" class="common__link">
+              <img src="images/link-icon.svg" />
+            </a>
+          </div>
+          <div class="profiles block">
+            <div class="profiles__details">
+              <a href="#/" class="profiles__details--1">
+                <img src="images/fiverr.png" alt="" />
+              </a>
+              <a href="#/" class="profiles__details--2">
+                <img src="images/upword.png" alt="" />
+              </a>
+            </div>
+            <div class="block__details">
+              <p class="block__info">Stay with me</p>
+              <h1 class="block__title">Profiles</h1>
+            </div>
+            <a href="#/" class="common__link">
+              <img src="images/link-icon.svg" />
+            </a>
+          </div>
+          <div class="services">
+            <div class="services__details">
+              <div class="service">Static Websites</div>
+              <div class="service">API Powered Solutions</div>
+              <div class="service">Full Stack Applications</div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/icon-1.svg" alt="" class="work__icon" />
+            <p class="work__title">Let's <br />work <span>together.</span></p>
+            <a href="#/" class="common__link">
+              <img src="images/link-icon.svg" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="credentials" data-page="credentials">
+        <div class="credentials__details">
+          <h1 class="credentials__title">Credentials</h1>
+          <p class="credentials__info">More about me</p>
+        </div>
+        <div class="credential">
+          <h1 class="credential__title">🎓 Education</h1>
+          <div class="credential__block" credential="bs">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon>2018 - 2023
+              </h3>
+              <h1 class="credential__name">Bachelor's in Computer Science</h1>
+              <p class="credential__detail">University of Sargodha, Sargodha</p>
+            </div>
+          </div>
+          <div class="credential__block" credential="fsc">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon> 2016 - 2018
+              </h3>
+              <h1 class="credential__name">Pre-Engineering - FSc</h1>
+              <p class="credential__detail">Punjab College Sargodha, Sargodha</p>
+            </div>
+          </div>
+          <div class="credential__block" credential="matric">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon> 2014 - 2016
+              </h3>
+              <h1 class="credential__name">Secondary School Certificate</h1>
+              <p class="credential__detail">Govt. High School Sargodha</p>
+            </div>
+          </div>
+        </div>
+        <div class="credential">
+          <h1 class="credential__title">👨‍💻 Experiences</h1>
+          <div class="credential__block" credential="bs">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon>2019 - Present
+              </h3>
+              <h1 class="credential__name">Graphics Designer</h1>
+              <p class="credential__detail">Working as Freelancer on Fiverr and Upwork</p>
+            </div>
+          </div>
+          <div class="credential__block" credential="fsc">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon> 2020 - 2022
+              </h3>
+              <h1 class="credential__name">Front-End Developer</h1>
+              <p class="credential__detail">Izandu Enterprise & Technologies</p>
+            </div>
+          </div>
+          <div class="credential__block" credential="matric">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon> 2022 - Present
+              </h3>
+              <h1 class="credential__name">Full Stack Developer</h1>
+              <p class="credential__detail">Freelancer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills" data-page="skills">
+        <div class="skills__details">
+          <h1 class="skills__title">Specialization</h1>
+          <p class="skills__info">My Experties</p>
+        </div>
+        <div class="skill">
+          <h1 class="skill__title">Languages</h1>
+          <div class="skill__content">
+            <img src="images/bw/js.png" alt="" class="skill__item" />
+            <img src="images/bw/c-plus.png" alt="" class="skill__item" />
+            <img src="images/bw/c-sharp.png" alt="" class="skill__item" />
+          </div>
+        </div>
+        <div class="skill">
+          <h1 class="skill__title">Frameworks</h1>
+          <div class="skill__content">
+            <img src="images/bw/sass.png" alt="" class="skill__item" />
+            <img src="images/bw/express.png" alt="" class="skill__item" />
+            <img src="images/bw/nodejs.png" alt="" class="skill__item" />
+            <img src="images/bw/React-icon.png" alt="" class="skill__item" />
+          </div>
+        </div>
+        <div class="skill">
+          <h1 class="skill__title">Databases</h1>
+          <div class="skill__content">
+            <img src="images/bw/mongo-logo.png" alt="" class="skill__item" />
+            <img src="images/bw/mysql-logo.png" alt="" class="skill__item" />
+          </div>
+        </div>
+        <div class="skill">
+          <h1 class="skill__title">Graphics Design</h1>
+          <div class="skill__content">
+            <img src="images/bw/ai.png" alt="" class="skill__item" />
+            <img src="images/bw/ps.png" alt="" class="skill__item" />
+            <img src="images/bw/pr.png" alt="" class="skill__item" />
+            <img src="images/bw/ae.png" alt="" class="skill__item" />
+            <img src="images/bw/xd.png" alt="" class="skill__item" />
+            <img src="images/bw/id.png" alt="" class="skill__item" />
+            <img src="images/bw/figma.png" alt="" class="skill__item" />
+          </div>
+        </div>
+      </section>
+      <section class="portfolios" data-page="portfolios">
+        <div class="portfolios__details">
+          <h1 class="portfolios__title">Portfolios</h1>
+          <p class="portfolios__info">Showcase</p>
+        </div>
+        <div class="projects">
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button data-filter-btn>All</button>
+            </li>
+            <li class="filter__item">
+              <button data-filter-btn>Web design</button>
+            </li>
+            <li class="filter__item">
+              <button data-filter-btn>Applications</button>
+            </li>
+            <li class="filter__item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+          </ul>
+          <ul class="projects__list">
+            <li class="projects__item active" data-category="Web Development">
+              <div class="project">
+                <a href="#">
+                  <figure class="project__fig">
+                    <img src="images/project-1.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Finance</h3>
+                <p class="project__category">Web Development</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Web Development">
+              <div class="project">
+                <a href="#">
+                  <figure class="project__fig">
+                    <img src="images/project-2.png" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Orizon</h3>
+                <p class="project__category">Web Development</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Web Design">
+              <div class="project">
+                <a href="#">
+                  <figure class="project__fig">
+                    <img src="images/project-3.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Fundo</h3>
+                <p class="project__category">Web Design</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Applications">
+              <div class="project">
+                <a href="#">
+                  <figure class="project__fig">
+                    <img src="images/project-4.png" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Brawlhalla</h3>
+                <p class="project__category">Applications</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Web Design">
+              <div class="project">
+                <a href="#">
+                  <figure class="project__fig">
+                    <img src="images/project-5.png" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">DSM.</h3>
+                <p class="project__category">Web Design</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Web Design">
+              <div class="project">
+                <a href="#">
+                  <figure class="project__fig">
+                    <img src="images/project-6.png" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">MetaSpark</h3>
+                <p class="project__category">Web Design</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Web Development">
+              <div class="project">
+                <a href="#">
+                  <figure class="project__fig">
+                    <img src="images/project-7.png" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Summary</h3>
+                <p class="project__category">Web Development</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Applications">
+              <div class="project">
+                <a href="#">
+                  <figure class="project__fig">
+                    <img src="images/project-8.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Task Manager</h3>
+                <p class="project__category">Applications</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Web Development">
+              <div class="project">
+                <a href="#">
+                  <figure class="project__fig">
+                    <img src="images/project-9.png" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Arrival</h3>
+                <p class="project__category">Web Development</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about" data-page="about me">
+        <div class="about__details">
+          <h1 class="about__title">About me</h1>
+          <p class="about__info">Get to know me</p>
+        </div>
+        <div class="about__container">
+          <div class="about__left">
+            <img src="images/gallery.png" alt="" class="about__gallery" />
+          </div>
+          <div class="about__right">
+            <h3 class="about__tag">About me</h3>
+            <h1 class="about__heading">
+              Tech Enthusiast who loves to turn ideas into experiences through code.
+            </h1>
+            <p class="about__text">
+              <span
+                >I am Waseem, a seasoned web developer specializing in the MERN stack with a rich
+                background of one year in the field. With a passion for crafting seamless digital
+                experiences, I provide a unique blend of technical expertise and creative flair to
+                every project.</span
+              >
+              <span
+                >Beyond the world of coding, I find joy in exploring the realms of automobiles,
+                demonstrating an unparalleled fascination with cars. This love extends to a genuine
+                enthusiasm for PC gaming and cinematic adventures.</span
+              ><span>
+                Dedication is my forte, not only in the realm of technology but also in the pursuit
+                of a healthy lifestyle. Regular gym sessions serve as a testament to my commitment
+                to personal growth and well-being.</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" data-page="contact">
+        <div class="contact__details">
+          <h1 class="contact__title">Contact</h1>
+          <p class="contact__info">Stay With Me</p>
+        </div>
+        <div class="contact__container">
+          <div class="contact__map">
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1420.406917194388!2d72.6454727622912!3d32.141769306129085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1695396446970!5m2!1sen!2s"
+                width="600"
+                height="450"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </div>
+          <div class="contact__social">
+            <div class="contact__mail">
+              <p class="contact__name">Write me</p>
+              <a class="contact__desc" href="mailto:waseemsajid159@gmail.com"
+                >waseemsajid159@gmail.com</a
+              >
+            </div>
+            <div class="contact__address">
+              <p class="contact__name">My office</p>
+              <p class="contact__desc">Haiderabad Town, Jhal Chakian, Sargodha, Pakistan</p>
+            </div>
+            <div class="contact__links">
+              <p class="contact__name">Follow me</p>
+              <ul class="contact__list">
+                <li><a href="#/">Facebook.</a></li>
+                <li><a href="#/">Twitter.</a></li>
+                <li><a href="#/">Behance.</a></li>
+                <li><a href="#/">Dribble.</a></li>
+                <li><a href="#/">Instagram.</a></li>
+                <li><a href="#/">Linkedin.</a></li>
+              </ul>
+            </div>
+          </div>
+          <form class="contact__form" action="#/">
+            <input type="text" class="contact__form--input" placeholder="Name" />
+            <input type="email" class="contact__form--input" placeholder="Email" />
+            <input type="text" class="contact__form--input" placeholder="Company" />
+            <textarea
+              name="info"
+              id="info"
+              class="contact__form--input"
+              placeholder="Tell me about your project"
+            ></textarea>
+            <button class="contact__form--button" disabled type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
