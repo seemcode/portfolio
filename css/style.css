@@ -309,15 +309,6 @@ nav.active {
 .contact {
   border-radius: 2.5rem;
   background-color: var(--color-dark-2); }
-  @media only screen and (max-width: 62.5em) {
-    .contact {
-      max-width: 100rem; } }
-  @media only screen and (max-width: 50em) {
-    .contact {
-      max-width: 70rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .contact {
-      max-width: 50rem; } }
   .contact__details {
     display: inline-block;
     margin-bottom: 4rem; }
@@ -436,15 +427,6 @@ nav.active {
   padding: 5rem 5rem;
   border-radius: 2.5rem;
   background-color: var(--color-dark-2); }
-  @media only screen and (max-width: 62.5em) {
-    .credentials {
-      max-width: 100rem; } }
-  @media only screen and (max-width: 50em) {
-    .credentials {
-      max-width: 70rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .credentials {
-      max-width: 50rem; } }
   .credentials__details {
     display: inline-block;
     margin-bottom: 4rem; }
@@ -841,15 +823,6 @@ nav.active {
   padding: 5rem 5rem 10rem 5rem;
   border-radius: 2.5rem;
   background-color: var(--color-dark-2); }
-  @media only screen and (max-width: 62.5em) {
-    .portfolios {
-      max-width: 100rem; } }
-  @media only screen and (max-width: 50em) {
-    .portfolios {
-      max-width: 70rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .portfolios {
-      max-width: 50rem; } }
   .portfolios__details {
     display: inline-block;
     margin-bottom: 4rem; }
@@ -960,15 +933,6 @@ nav.active {
   padding: 5rem 5rem;
   border-radius: 2.5rem;
   background-color: var(--color-dark-2); }
-  @media only screen and (max-width: 62.5em) {
-    .skills {
-      max-width: 100rem; } }
-  @media only screen and (max-width: 50em) {
-    .skills {
-      max-width: 70rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .skills {
-      max-width: 50rem; } }
   .skills__details {
     display: inline-block;
     margin-bottom: 4rem; }
