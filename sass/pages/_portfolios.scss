@@ -5,13 +5,25 @@
   border-radius: 2.5rem;
   background-color: var(--color-dark-2);
 
+  @media only screen and (max-width: $bp-large) {
+    max-width: 100rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    max-width: 70rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    max-width: 50rem;
+  }
+
   &__details {
     display: inline-block;
     margin-bottom: 4rem;
   }
 
   &__title {
-    color: var(--color-green-1);
+    color: var(--color-secondary-1);
   }
 
   &__info {
@@ -52,7 +64,7 @@
       }
 
       &:focus {
-        color: var(--color-green-1);
+        color: var(--color-secondary-1);
       }
     }
   }
@@ -135,7 +147,7 @@
       width: 2rem;
       height: 2rem;
       @include absCenter;
-      color: var(--color-green-1);
+      color: var(--color-secondary-1);
       z-index: 200;
     }
   }

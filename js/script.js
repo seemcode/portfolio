@@ -1,6 +1,14 @@
 /////////////////////
 // Header Navigation
 
+const input = document.querySelector(".header__mblnav--input");
+const headernav = document.querySelector(".header__nav");
+
+// Mobile Navigation Button
+input.addEventListener("change", function (e) {
+  headernav.classList.toggle("active");
+});
+
 const nav = document.querySelector(".header__nav");
 const pages = document.querySelectorAll("[data-page]");
 
@@ -11,6 +19,8 @@ nav.addEventListener("click", function (e) {
   for (let i = 0; i < pages.length; i++) {
     if (pages[i].dataset.page == btn) {
       pages[i].classList.add("active");
+      headernav.classList.toggle("active");
+      input.checked = false;
     } else {
       pages[i].classList.remove("active");
     }
@@ -37,3 +47,11 @@ document.querySelector(".filter__list").addEventListener("click", function (e) {
     }
   }
 });
+
+///////////////////////
+// Light - Dark Mode
+
+// const clricon = document.querySelector(".header__clrbtn--icon");
+// clricon.addEventListener("click", function (e) {
+//   clricon.name = "moon-outline";
+// });

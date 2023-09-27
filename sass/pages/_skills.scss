@@ -5,13 +5,25 @@
   border-radius: 2.5rem;
   background-color: var(--color-dark-2);
 
+  @media only screen and (max-width: $bp-large) {
+    max-width: 100rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    max-width: 70rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    max-width: 50rem;
+  }
+
   &__details {
     display: inline-block;
     margin-bottom: 4rem;
   }
 
   &__title {
-    color: var(--color-green-1);
+    color: var(--color-secondary-1);
   }
 
   &__info {
@@ -46,6 +58,14 @@
       display: flex;
       align-items: center;
       gap: 5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        gap: 3rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        gap: 2rem;
+      }
     }
 
     &__item {
@@ -53,6 +73,14 @@
       height: 5rem;
       filter: opacity(0.35);
       transition: all 0.1s;
+
+      @media only screen and (max-width: $bp-medium) {
+        height: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        height: 3rem;
+      }
 
       &:hover {
         filter: opacity(1);
