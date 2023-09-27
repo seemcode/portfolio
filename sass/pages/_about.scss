@@ -1,22 +1,4 @@
 .about {
-  width: 120rem;
-  margin: 0 auto 7rem;
-  padding: 5rem 5rem 10rem 5rem;
-  border-radius: 2.5rem;
-  background-color: var(--color-dark-2);
-
-  @media only screen and (max-width: $bp-large) {
-    max-width: 100rem;
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    max-width: 70rem;
-  }
-
-  @media only screen and (max-width: $bp-small) {
-    max-width: 50rem;
-  }
-
   &__details {
     display: inline-block;
     margin-bottom: 4rem;

@@ -1,12 +1,9 @@
 .header {
-  width: 125rem;
-
-  @media only screen and (max-width: $bp-largest) {
-    max-width: 120rem;
-  }
+  max-width: 135rem;
+  padding: 0 5rem;
 
   @media only screen and (max-width: $bp-large) {
-    max-width: 100rem;
+    max-width: 90%;
     align-items: end;
     padding-bottom: 1rem;
 
@@ -17,19 +14,9 @@
     }
   }
 
-  @media only screen and (max-width: $bp-medium) {
-    max-width: 80rem;
-    padding: 0 5rem;
-  }
-
-  @media only screen and (max-width: $bp-small) {
-    max-width: 60rem;
-    padding: 0 5rem;
-  }
-
   margin: 0 auto;
   height: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3.5rem;
 
   display: flex;
   align-items: center;

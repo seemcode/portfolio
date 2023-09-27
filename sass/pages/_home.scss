@@ -34,30 +34,23 @@
 }
 
 .home {
+  max-width: 130rem;
+  padding: 0 5rem;
+  background-color: transparent;
+
   @media only screen and (max-width: $bp-medium) {
     padding-bottom: 10rem;
   }
 
   &__content {
-    max-width: 120rem;
-    margin: 0 auto;
+    margin: 0 auto 7rem;
 
     display: grid;
-    grid-template-columns: repeat(8, minmax(min-content, 1fr));
+    grid-template-columns: repeat(8, 1fr);
     gap: 3rem;
 
-    @media only screen and (max-width: $bp-large) {
-      max-width: 100rem;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      max-width: 80rem;
-      padding: 0 5rem;
-    }
-
     @media only screen and (max-width: $bp-small) {
-      max-width: 60rem;
-      padding: 0 5rem;
+      gap: 2rem;
     }
 
     & > * {
@@ -77,6 +70,10 @@
       display: flex;
       align-items: center;
       gap: 3rem;
+
+      @media only screen and (max-width: $bp-small) {
+        gap: 2rem;
+      }
 
       &__img {
         width: 20rem;
@@ -129,6 +126,10 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(4, 1fr);
       gap: 2.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        gap: 2rem;
+      }
 
       padding: 0;
       border-radius: 0;
