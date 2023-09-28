@@ -25,6 +25,15 @@
   --color-dark-4: #3f3f40;
   --color-secondary-1: #4dcfff; }
 
+.dark-mode {
+  --color-light-1: #121212;
+  --color-light-2: #1e1e1f;
+  --color-dark-1: #fafafa;
+  --color-dark-2: #e6e6e7;
+  --color-dark-3: #272727;
+  --color-dark-4: #3f3f40;
+  --color-secondary-1: #0c90c0; }
+
 *,
 *::before,
 *::after {
@@ -50,11 +59,12 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   line-height: 1.6;
   font-weight: 400;
   background-color: var(--color-dark-1);
-  color: var(--color-light-1); }
+  color: var(--color-light-1);
+  transition: all 0.2s; }
 
 main {
   padding: 0 5rem; }
@@ -187,7 +197,8 @@ nav.active {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      color: var(--color-dark-1); }
   .header__mblnav {
     display: none;
     position: relative;
@@ -854,6 +865,9 @@ nav.active {
   margin-bottom: 4rem;
   justify-content: center;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .filter__list {
+      display: none; } }
   .filter__list .filter__item button {
     color: var(--color-light-1);
     font: inherit;
@@ -872,6 +886,14 @@ nav.active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem; }
+  @media only screen and (max-width: 62.5em) {
+    .projects__list {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .projects__list {
+      padding: 0;
+      grid-template-columns: 1fr; } }
 
 .projects__item {
   display: none; }
@@ -923,6 +945,10 @@ nav.active {
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     transition: all 0.2s; }
+    @media only screen and (max-width: 37.5em) {
+      .project__iconbox {
+        width: 10rem;
+        height: 10rem; } }
     .project__iconbox ion-icon {
       width: 2rem;
       height: 2rem;
@@ -932,13 +958,95 @@ nav.active {
       transform: translate(-50%, -50%);
       color: var(--color-secondary-1);
       z-index: 200; }
+      @media only screen and (max-width: 37.5em) {
+        .project__iconbox ion-icon {
+          width: 4rem;
+          height: 4rem; } }
   .project__title {
     font-weight: 500;
     font-size: 1.5rem;
     padding-top: 1rem; }
+    @media only screen and (max-width: 62.5em) {
+      .project__title {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .project__title {
+        font-size: 2.5rem; } }
   .project__category {
     font-size: 1.4rem;
     color: var(--color-light-2); }
+    @media only screen and (max-width: 62.5em) {
+      .project__category {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .project__category {
+        font-size: 2rem; } }
+
+.filter__select-box {
+  font-size: 2.25rem;
+  margin-bottom: 4rem;
+  display: none;
+  position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .filter__select-box {
+      display: block; } }
+
+.filter__select {
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--color-light-1);
+  padding: 1.7rem 3rem;
+  width: 100%;
+  outline: none;
+  background: none;
+  border-radius: 1.75rem;
+  border: 0.5px solid var(--color-light-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .filter__select--value {
+    line-height: 1; }
+  .filter__select--icon {
+    display: flex; }
+    .filter__select--icon ion-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      color: var(--color-light-1); }
+
+.select__list {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  z-index: 1111;
+  margin-top: 1rem;
+  list-style: none;
+  padding: 1.7rem;
+  background-color: var(--color-dark-2);
+  border: 0.5px solid var(--color-light-2);
+  border-radius: 1.75rem;
+  width: 100%; }
+  .select__list button {
+    cursor: pointer;
+    font-family: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--color-light-2);
+    transition: all 0.1s;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    text-align: left; }
+    .select__list button:hover {
+      color: var(--color-light-1);
+      background-color: var(--color-dark-3); }
+
+.filter__select-box.active .select__list {
+  display: block; }
+
+.filter__select-box.active .filter__select--icon ion-icon {
+  transform: rotate(0.5turn); }
 
 .skills {
   width: 120rem;

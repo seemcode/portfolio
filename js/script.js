@@ -48,10 +48,37 @@ document.querySelector(".filter__list").addEventListener("click", function (e) {
   }
 });
 
+// Portfolio Select Box
+const selectBox = document.querySelector(".filter__select-box");
+const selectBoxItems = document.querySelectorAll("[data-select-item]");
+
+selectBox.addEventListener("click", function (e) {
+  e.target.closest(".filter__select-box").classList.toggle("active");
+
+  const selectField = e.target.closest("[data-select-item]");
+  if (!selectField) return;
+  console.log(selectField);
+
+  // Changing title of select box
+  document.querySelector(".filter__select--value").textContent = selectField.innerHTML;
+
+  // Matching Projects
+  for (let i = 0; i < projects.length; i++) {
+    if (projects[i].dataset.category.toLowerCase() === selectField.innerHTML.toLowerCase()) {
+      console.log("working");
+      projects[i].classList.add("active");
+    } else if ("all" === selectField.innerHTML.toLowerCase()) {
+      projects[i].classList.add("active");
+    } else {
+      projects[i].classList.remove("active");
+    }
+  }
+});
+
 ///////////////////////
 // Light - Dark Mode
 
-// const clricon = document.querySelector(".header__clrbtn--icon");
-// clricon.addEventListener("click", function (e) {
-//   clricon.name = "moon-outline";
-// });
+const clrBtn = document.querySelector(".header__clrbtn");
+clrBtn.addEventListener("click", function (e) {
+  document.body.classList.toggle("dark-mode");
+});
