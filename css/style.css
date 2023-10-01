@@ -803,12 +803,12 @@ nav.active {
         @media only screen and (max-width: 50em) {
           .home__content .profiles__details {
             justify-content: center;
-            gap: 5rem; } }
+            gap: 3rem; } }
         .home__content .profiles__details img {
           height: 6rem;
           transition: all 0.1s; }
           .home__content .profiles__details img:hover {
-            filter: brightness(0.6); }
+            filter: invert(46%) sepia(81%) saturate(384%) hue-rotate(65deg) brightness(103%) contrast(90%); }
     .home__content .services {
       grid-column: 1 / span 4; }
       @media only screen and (max-width: 50em) {
@@ -855,6 +855,16 @@ nav.active {
         .home__content .work__title span {
           color: var(--color-secondary-1);
           font-weight: 700; }
+
+.dark-mode .profiles__details img {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(0%) saturate(0%) hue-rotate(149deg) brightness(94%) contrast(83%); }
+
+.dark-mode .home-skills__details--2 {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(0%) saturate(0%) hue-rotate(149deg) brightness(94%) contrast(83%); }
+
+.dark-mode .home-skills__details--1,
+.dark-mode .home-skills__details--4 {
+  filter: invert(46%) sepia(81%) saturate(384%) hue-rotate(65deg) brightness(103%) contrast(90%); }
 
 .portfolios {
   width: 120rem;
@@ -927,7 +937,7 @@ nav.active {
     transform: scale(1.1); }
   .project__fig {
     display: inline-block;
-    border-radius: 2rem;
+    border-radius: 1.25rem;
     overflow: hidden;
     position: relative; }
     .project__fig img {
