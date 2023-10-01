@@ -6,11 +6,32 @@
   img {
     display: block;
     height: 3rem;
-    filter: invert(0.5);
     transition: all 0.1s;
 
     &:hover {
-      filter: invert(1);
+      filter: invert(40%) sepia(83%) saturate(636%) hue-rotate(154deg) brightness(97%) contrast(94%);
+    }
+  }
+
+  &[data-download] {
+    img:hover {
+      transform: translateX(10px) rotate(90deg);
+    }
+  }
+}
+
+.dark-mode .common__link {
+  img {
+    filter: brightness(0) saturate(100%);
+
+    &:hover {
+      filter: invert(40%) sepia(83%) saturate(636%) hue-rotate(154deg) brightness(97%) contrast(94%);
+    }
+  }
+
+  &[data-download] {
+    img:hover {
+      transform: translateX(10px) rotate(90deg);
     }
   }
 }
@@ -189,6 +210,14 @@
           display: block;
           margin: 0 auto;
           margin-top: 2rem;
+          color: var(--color-light-1);
+
+          display: flex;
+          justify-content: center;
+
+          svg {
+            width: 60%;
+          }
         }
       }
 

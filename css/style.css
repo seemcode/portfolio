@@ -18,7 +18,8 @@
 
 :root {
   --color-light-1: #fafafa;
-  --color-light-2: #fafafab7;
+  --color-light-2: #e2e2e2;
+  --color-light-3: #c4c4c4;
   --color-dark-1: #121212;
   --color-dark-2: #1e1e1f;
   --color-dark-3: #272727;
@@ -30,7 +31,7 @@
   --color-light-2: #1e1e1f;
   --color-dark-1: #fafafa;
   --color-dark-2: #e6e6e7;
-  --color-dark-3: #272727;
+  --color-dark-3: #c4c4c4;
   --color-dark-4: #3f3f40;
   --color-secondary-1: #0c90c0; }
 
@@ -135,8 +136,8 @@ nav.active {
     text-decoration: none;
     color: var(--color-light-2);
     transition: all 0.1s; }
-    .header__nav--link:hover {
-      color: var(--color-light-1); }
+    .header__nav--link:hover, .header__nav--link:focus {
+      color: var(--color-secondary-1); }
   @media only screen and (max-width: 62.5em) {
     .header__nav {
       background-color: var(--color-dark-1);
@@ -472,7 +473,7 @@ nav.active {
         align-items: center;
         margin-bottom: 5rem; } }
     .credentials .credential__title {
-      background-color: var(--color-light-1);
+      background-color: var(--color-light-2);
       color: var(--color-dark-2);
       padding: 1rem 4rem;
       border-radius: 100px;
@@ -596,10 +597,19 @@ nav.active {
   .common__link img {
     display: block;
     height: 3rem;
-    filter: invert(0.5);
     transition: all 0.1s; }
     .common__link img:hover {
-      filter: invert(1); }
+      filter: invert(40%) sepia(83%) saturate(636%) hue-rotate(154deg) brightness(97%) contrast(94%); }
+  .common__link[data-download] img:hover {
+    transform: translateX(10px) rotate(90deg); }
+
+.dark-mode .common__link img {
+  filter: brightness(0) saturate(100%); }
+  .dark-mode .common__link img:hover {
+    filter: invert(40%) sepia(83%) saturate(636%) hue-rotate(154deg) brightness(97%) contrast(94%); }
+
+.dark-mode .common__link[data-download] img:hover {
+  transform: translateX(10px) rotate(90deg); }
 
 .block__details {
   position: absolute;
@@ -727,7 +737,12 @@ nav.active {
           height: 3.5rem;
           display: block;
           margin: 0 auto;
-          margin-top: 2rem; }
+          margin-top: 2rem;
+          color: var(--color-light-1);
+          display: flex;
+          justify-content: center; }
+          .home__content .display__credentials .signature svg {
+            width: 60%; }
       .home__content .display__portfolios {
         grid-column: 2 / span 1;
         grid-row: 2/ -1;
@@ -1068,18 +1083,22 @@ nav.active {
     text-align: center;
     margin-bottom: 7rem; }
     .skills .skill__title {
+      color: var(--color-light-1);
       display: inline-block;
       text-transform: uppercase;
       font-weight: 400;
       font-size: 2rem;
       text-align: center;
-      border-bottom: 2.5px solid currentColor;
+      border-bottom: 1px solid currentColor;
       line-height: 1;
       padding: 0.5rem 0;
       margin: 0 auto;
       position: relative;
       z-index: 1;
-      margin-bottom: 5rem; }
+      margin-bottom: 5rem;
+      transition: all 0.1s; }
+      .skills .skill__title:hover {
+        color: var(--color-secondary-1); }
     .skills .skill__content {
       margin: auto;
       width: min-content;
@@ -1095,7 +1114,8 @@ nav.active {
     .skills .skill__item {
       display: block;
       height: 5rem;
-      filter: opacity(0.35);
+      filter: brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(23%) hue-rotate(343deg) brightness(87%) contrast(90%);
+      opacity: 0.5;
       transition: all 0.1s; }
       @media only screen and (max-width: 50em) {
         .skills .skill__item {
@@ -1104,4 +1124,11 @@ nav.active {
         .skills .skill__item {
           height: 3rem; } }
       .skills .skill__item:hover {
-        filter: opacity(1); }
+        opacity: 1; }
+
+.dark-mode .skill__item {
+  opacity: 0.4;
+  filter: brightness(0) saturate(100%) invert(10%) sepia(7%) saturate(133%) hue-rotate(202deg) brightness(99%) contrast(96%); }
+  .dark-mode .skill__item:hover {
+    opacity: 1;
+    filter: brightness(0) saturate(100%); }

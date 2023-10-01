@@ -82,3 +82,21 @@ const clrBtn = document.querySelector(".header__clrbtn");
 clrBtn.addEventListener("click", function (e) {
   document.body.classList.toggle("dark-mode");
 });
+
+///////////////////////
+// Home Page Navigation
+const commonLinks = document.querySelectorAll(".common__link");
+console.log(commonLinks);
+
+document.querySelector(".home__content").addEventListener("click", function (e) {
+  const page = e.target.closest(".common__link")?.dataset.page.toLowerCase();
+  if (!page) return;
+
+  for (let i = 0; i < pages.length; i++) {
+    if (pages[i].dataset.page == page) {
+      pages[i].classList.add("active");
+    } else {
+      pages[i].classList.remove("active");
+    }
+  }
+});

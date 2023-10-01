@@ -43,8 +43,9 @@
       color: var(--color-light-2);
       transition: all 0.1s;
 
-      &:hover {
-        color: var(--color-light-1);
+      &:hover,
+      &:focus {
+        color: var(--color-secondary-1);
       }
     }
 

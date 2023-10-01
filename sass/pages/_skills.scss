@@ -26,18 +26,24 @@
     margin-bottom: 7rem;
 
     &__title {
+      color: var(--color-light-1);
       display: inline-block;
       text-transform: uppercase;
       font-weight: 400;
       font-size: 2rem;
       text-align: center;
-      border-bottom: 2.5px solid currentColor;
+      border-bottom: 1px solid currentColor;
       line-height: 1;
       padding: 0.5rem 0;
       margin: 0 auto;
       position: relative;
       z-index: 1;
       margin-bottom: 5rem;
+      transition: all 0.1s;
+
+      &:hover {
+        color: var(--color-secondary-1);
+      }
     }
 
     &__content {
@@ -59,7 +65,9 @@
     &__item {
       display: block;
       height: 5rem;
-      filter: opacity(0.35);
+      filter: brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(23%) hue-rotate(343deg)
+        brightness(87%) contrast(90%);
+      opacity: 0.5;
       transition: all 0.1s;
 
       @media only screen and (max-width: $bp-medium) {
@@ -71,8 +79,20 @@
       }
 
       &:hover {
-        filter: opacity(1);
+        opacity: 1;
+        // filter: brightness(100) saturate(100%);
       }
     }
+  }
+}
+
+.dark-mode .skill__item {
+  opacity: 0.4;
+  filter: brightness(0) saturate(100%) invert(10%) sepia(7%) saturate(133%) hue-rotate(202deg)
+    brightness(99%) contrast(96%);
+
+  &:hover {
+    opacity: 1;
+    filter: brightness(0) saturate(100%);
   }
 }
