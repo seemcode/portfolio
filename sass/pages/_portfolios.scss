@@ -270,3 +270,13 @@
 .filter__select-box.active .filter__select--icon ion-icon {
   transform: rotate(0.5turn);
 }
+
+.projects__item[data-category="Graphics"] {
+  .project__iconbox {
+    display: none !important;
+  }
+
+  .project__fig::before {
+    display: none !important;
+  }
+}
