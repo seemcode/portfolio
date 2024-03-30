@@ -1,7 +1,7 @@
 .portfolios {
   width: 120rem;
   margin: 0 auto 7rem;
-  padding: 5rem 5rem 10rem 5rem;
+  padding: 4rem 5rem 6rem 5rem;
   border-radius: 2.5rem;
   background-color: var(--color-dark-2);
 
@@ -62,14 +62,19 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
 
+    overflow: auto;
+    height: 55vh;
+
     @media only screen and (max-width: $bp-large) {
       grid-template-columns: 1fr 1fr;
       padding: 0 1rem;
+      height: 63vh;
     }
 
     @media only screen and (max-width: $bp-small) {
-      padding: 0;
+      padding: 0 2rem;
       grid-template-columns: 1fr;
+      height: 69vh;
     }
   }
 

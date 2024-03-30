@@ -99,3 +99,16 @@ nav.active {
   display: block;
   transform: translateX(0);
 }
+
+.has-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: white; /* Yellow color for track */
+  border-radius: 20px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 55%);
+  border-radius: 20px;
+  border: 10px solid transparent;
+}
