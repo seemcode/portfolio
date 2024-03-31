@@ -48,7 +48,7 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header__logo">Waseem</h1>
+      <h1 class="header__logo" data-page="Home">Waseem</h1>
       <nav class="header__nav">
         <ul class="header__nav--list">
           <li class="header__nav--item">
@@ -210,7 +210,7 @@
               <p class="block__info">my cv</p>
               <h1 class="block__title">Download</h1>
             </div>
-            <a href="#/" class="common__link" data-download="Download">
+            <a download="" href="./assets/Resume.pdf" class="common__link" data-download="Download">
               <img src="images/link-icon.png" />
             </a>
           </div>
@@ -231,10 +231,13 @@
           </div>
           <div class="profiles block">
             <div class="profiles__details">
-              <a href="#/" class="profiles__details--1">
+              <a href="https://www.fiverr.com/mytake09" class="profiles__details--1">
                 <img src="images/fiverr.png" alt="" />
               </a>
-              <a href="#/" class="profiles__details--2">
+              <a
+                href="https://www.upwork.com/freelancers/~011712fb476eec1a19?viewMode=1"
+                class="profiles__details--2"
+              >
                 <img src="images/upword.png" alt="" />
               </a>
             </div>
@@ -759,17 +762,18 @@
               </ul>
             </div>
           </div>
-          <form class="contact__form" action="#/">
-            <input type="text" class="contact__form--input" placeholder="Name" />
-            <input type="email" class="contact__form--input" placeholder="Email" />
-            <input type="text" class="contact__form--input" placeholder="Company" />
+          <form class="contact__form" action="https://formspree.io/f/xkndqqpo" method="POST">
+            <input type="text" class="contact__form--input" placeholder="Name" name="name" />
+            <input type="email" class="contact__form--input" placeholder="Email" name="email" />
+            <input type="text" class="contact__form--input" placeholder="Company" name="company" />
             <textarea
               name="info"
               id="info"
               class="contact__form--input"
               placeholder="Tell me about your project"
+              name="message"
             ></textarea>
-            <button class="contact__form--button" disabled type="submit">Send</button>
+            <button class="contact__form--button" type="submit">Send</button>
           </form>
         </div>
       </section>

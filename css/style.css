@@ -139,7 +139,8 @@ nav.active {
       max-width: 95%; } }
   .header__logo {
     font-weight: 600;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    cursor: pointer; }
   .header__nav--list {
     list-style: none;
     display: flex;

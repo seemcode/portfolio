@@ -27,6 +27,14 @@ nav.addEventListener("click", function (e) {
   }
 });
 
+const headerLogo = document.querySelector(".header__logo");
+headerLogo.addEventListener("click", function () {
+  for (let i = 0; i < pages.length; i++) {
+    pages[i].classList.remove("active");
+    document.querySelector(".home").classList.add("active");
+  }
+});
+
 //////////////////////////////
 // Portfolio Filter Navigation
 
