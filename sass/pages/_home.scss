@@ -101,7 +101,7 @@
       }
 
       &__img {
-        width: 20rem;
+        min-width: 20rem;
         height: 20rem;
         border-top-left-radius: 2.5rem;
         border-bottom-right-radius: 2.5rem;
@@ -136,7 +136,7 @@
         font-size: 1.3rem;
         color: var(--color-light-2);
         font-weight: 300;
-        width: 80%;
+        width: 90%;
       }
     }
 
@@ -281,7 +281,7 @@
         }
 
         &--2 {
-          filter: invert(1);
+          // filter: invert(1);
           transform: translateY(0.3rem);
         }
       }

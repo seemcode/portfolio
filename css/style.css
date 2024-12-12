@@ -298,7 +298,6 @@ nav.active {
   grid-template-columns: 1fr 1fr;
   gap: 7rem;
   align-items: center;
-  margin-top: 6rem;
   padding: 0 4rem; }
   @media only screen and (max-width: 62.5em) {
     .about__container {
@@ -672,7 +671,7 @@ nav.active {
         .home__content .my {
           gap: 2rem; } }
       .home__content .my__img {
-        width: 20rem;
+        min-width: 20rem;
         height: 20rem;
         border-top-left-radius: 2.5rem;
         border-bottom-right-radius: 2.5rem;
@@ -698,7 +697,7 @@ nav.active {
         font-size: 1.3rem;
         color: var(--color-light-2);
         font-weight: 300;
-        width: 80%; }
+        width: 90%; }
     .home__content .display {
       grid-column: 5/ -1;
       display: grid;
@@ -799,7 +798,6 @@ nav.active {
           height: 5rem;
           display: block; }
         .home__content .home-skills__details--2 {
-          filter: invert(1);
           transform: translateY(0.3rem); }
     .home__content .profiles {
       grid-column: 7 / span 2; }
