@@ -818,8 +818,6 @@ nav.active {
         .home__content .profiles__details img {
           height: 6rem;
           transition: all 0.1s; }
-          .home__content .profiles__details img:hover {
-            filter: invert(46%) sepia(81%) saturate(384%) hue-rotate(65deg) brightness(103%) contrast(90%); }
     .home__content .services {
       grid-column: 1 / span 4; }
       @media only screen and (max-width: 50em) {

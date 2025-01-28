@@ -312,8 +312,8 @@
           transition: all 0.1s;
 
           &:hover {
-            filter: invert(46%) sepia(81%) saturate(384%) hue-rotate(65deg) brightness(103%)
-              contrast(90%);
+            // filter: invert(46%) sepia(81%) saturate(384%) hue-rotate(65deg) brightness(103%)
+            //   contrast(90%);
           }
         }
       }
